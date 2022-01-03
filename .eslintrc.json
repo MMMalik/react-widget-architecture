@@ -1,0 +1,35 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "no-use-before-define": "off",
+    "require-await": "error",
+    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "mocha/no-top-level-hooks": "off",
+    "no-console": "error"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "es6",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "paths": {
+      "redux": [
+        "node_modules/redux/"
+      ],
+      "redux-thunk": [
+        "node_modules/redux-thunk/"
+      ]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "include": [
+    "./src"
+  ],
+}

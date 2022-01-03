@@ -1,0 +1,42 @@
+{
+  "name": "react-widget-architecture",
+  "version": "1.0.0",
+  "description": "A configurable and pluggable widget built with React",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && pnpm sass",
+    "lint": "eslint src",
+    "sass:watch": "pnpm sass -- --watch",
+    "sass": "sass src:dist",
+    "tsc:watch": "tsc --watch"
+  },
+  "keywords": [
+    "architecture",
+    "react",
+    "widget"
+  ],
+  "author": "michalmmalik@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
+    "mitt": "^3.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.6.0",
+    "eslint-config-ckeditor5": "^3.1.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "sass": "^1.45.2",
+    "typescript": "^4.5.4"
+  }
+}

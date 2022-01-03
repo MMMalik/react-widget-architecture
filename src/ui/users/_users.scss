@@ -1,0 +1,32 @@
+@use "../theme";
+
+.users {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__list {
+		padding: 0;
+		margin: 0;
+	}
+
+	&__user {
+		list-style: none;
+	}
+
+	&__btn {
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 20px;
+		color: theme.$muted;
+		background-color: transparent;
+		margin: 5px;
+		border: 0;
+		transition: all 0.2s;
+
+		&:hover {
+			color: theme.$accent;
+		}
+	}
+}
