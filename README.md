@@ -11,28 +11,28 @@ The widget is supposed to be configurable. It should be possible to:
 -   configure UI theme (TODO)
 
 The approach is inspired by [Clean Architecture](https://dev.to/bespoyasov/clean-architecture-on-frontend-4311) concepts,
-in particular by [this repo](https://github.com/bespoyasov/frontend-clean-architecture/blob/master/README.md). In order to simplify things, the "use cases" layer is omitted. Perhaps, if the widget were to be adapted for the needs of other frameworks (in addition to React),
+in particular by [this repo](https://github.com/bespoyasov/frontend-clean-architecture/blob/master/README.md). In order to simplify things, the "use cases" layer is omitted. Perhaps, if the widget were to be adapted for the needs of other frameworks or platforms,
 then "use cases" layer could be introduced.
 
 ## Structure
 
-### /samples
+### `/samples`
 
 Sample applications that use the widget.
 
-### /src/domain
+### `/src/domain`
 
 Definition of entities and pure, framework-agnostic business logic. No dependencies are allowed here.
 
-### /src/services
+### `/src/services`
 
 Framework-agnostic services (e.g. redux store, event emitter) as well as framework-specific adapters (e.g. React hooks).
 
-### /src/ui
+### `/src/ui`
 
 Framework-specific UI components.
 
-### /src/wrapper
+### `/src/wrapper`
 
 Wrapper around UI components that allows to use the widget in any front-end app.
 
@@ -46,7 +46,7 @@ pnpm i
 
 Build the widget:
 
-````
+```
 pnpm build
 ```
 
