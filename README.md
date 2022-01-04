@@ -53,7 +53,7 @@ pnpm build
 Link the widget (one-time operation):
 
 ```
-pnpm link --global react-widget-architecture
+pnpm link --global
 ```
 
 Run sample:
